@@ -1,0 +1,6 @@
+
+<view>
+  <!-- <button size="default" type="primary" onTap="_getAuthor">点击获取授权信息</button> -->
+  <image mode="scaleToFill" class="a-avator" src="{{avatar}}"/>
+  <text class="a-text">{{nickName}}</text>
+</view>

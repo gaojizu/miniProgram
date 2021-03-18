@@ -1,0 +1,19 @@
+page{
+  background-color:#3e90f7;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.a-avator{
+  margin-top: 10vh;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+}
+.a-text{
+  margin: 20rpx;
+  display: block;
+  color: #ffffff;
+  letter-spacing: 8rpx;
+}

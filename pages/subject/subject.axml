@@ -1,0 +1,3 @@
+<block a:for="{{classinfos}}" a:for-index="index" a:for-item="itemName">
+  <button size="default" type="primary" data-info="{{itemName}}" class="btn-class" onTap="_getDetails">{{itemName.props}}</button>
+</block>

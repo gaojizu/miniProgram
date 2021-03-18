@@ -1,0 +1,14 @@
+page {
+  background: #3e90f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn-class{
+  margin: 10rpx;
+  background: #FFFFFF;
+  color:#3e90f7;
+  border-radius: 1.2rem;
+  width:70vw;
+}
