@@ -1,0 +1,29 @@
+<block a:if="{{datilsList.length > 0}}" a:for="{{datilsList}}" a:for-item="itemName" a:for-index="index">
+  <view class="detail-content">
+    <am-tag class="content-tags" size="lg" type="danger">{{itemName.tags}}</am-tag>
+    <view class="content-title">{{itemName.title}}</view>
+    <view a:if="{{itemName.type === 'txt'}}" class="content-body">
+      <block a:for="{{itemName.response}}" a:for-item="itemProps" a:for-index="idx">
+        <view>{{itemProps.props}}</view>
+      </block>
+    </view>
+    <view a:elif="{{itemName.type === 'collapse'}}" class="content-body">
+      <block a:for="{{itemName.tableDatas}}" a:for-item="itemProps" a:for-index="idx">
+        <am-collapse>
+          <am-collapse-item header="{{itemProps.name}}" itemKey="{{idx}}">
+            <view class="item-content">
+              <block a:for="{{itemProps.content}}" a:for-index="id" a:for-item="itemContent">
+                <view>{{itemContent.props}}</view>
+              </block>
+            </view>
+          </am-collapse-item>
+        </am-collapse>
+      </block>
+    </view>
+  </view>
+</block>
+<block a:else>
+  <view>
+    <page-result type="empty" local="{{true}}" />
+  </view>
+</block>

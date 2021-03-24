@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "am-tag": "mini-ali-ui/es/tag/index"
+  }
+}

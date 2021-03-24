@@ -1,3 +1,12 @@
-<view>
-  this is catalog
-</view>
+<scroll-view scroll-y="{{true}}">
+  <block a:for="{{catLogLists}}" a:for-item="itemName" a:for-index="index">
+    <view class="catlog-item-list">
+      <am-tag a:if="{{itemName.level === 1}}" size="lg" type="danger">{{itemName.tags}}</am-tag>
+      <am-tag a:if="{{itemName.level === 2}}" size="lg" type="warning">{{itemName.tags}}</am-tag>
+      <am-tag a:if="{{itemName.level === 3}}" size="lg" type="success">{{itemName.tags}}</am-tag>
+      <am-tag a:if="{{itemName.level === 4}}" size="lg" type="primary">{{itemName.tags}}</am-tag>
+      <text>{{itemName.name}}</text>
+      <button size="default" data-info="{{itemName}}" onTap="_toStudy">开始学习</button>
+    </view>
+  </block>
+</scroll-view>

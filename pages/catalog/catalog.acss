@@ -1,4 +1,38 @@
-page{
-  background-color: aquamarine;
-  color: #FFFFFF
+page {
+  background-color: #3e90f7;
+  color: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catlog-item-list {
+  background-color: #FFFFFF;
+  border-radius: 14rpx;
+  width: 90vw;
+  height: 90rpx;
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.catlog-item-list text {
+  width: 55%;
+  margin-left: 5rpx;
+  font-size: 25rpx;
+  color: #3e90f7;
+}
+
+.catlog-item-list button {
+  width: 40%;
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 20rpx;
+  background-color: coral;
+  color: aliceblue;
+  border: none;
+  border-radius: 180rpx;
 }

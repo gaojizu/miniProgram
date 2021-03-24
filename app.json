@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/subject/subject",  
-    "pages/index/index",   
+    "pages/subject/subject",
+    "pages/index/index",
     "pages/details/details",
-    "pages/catalog/catalog"
+    "pages/catalog/catalog",
+    "pages/notice/notice"
   ],
   "window": {
     "defaultTitle": "EXAMINATION",

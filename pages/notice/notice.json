@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "am-notice": "mini-ali-ui/es/notice/index",
+    "am-card": "mini-ali-ui/es/card/index"
+  }
+}

@@ -16,7 +16,6 @@ Page({
   },
   onTabItemTap(item) {
     console.log(item)
-
   },
   _getclassInfosList() {
     my.request({
@@ -40,11 +39,19 @@ Page({
   },
   _getDetails(event) {
     let currId = event.target.dataset.info.id
-    console.log(currId)
+    let type = event.target.dataset.info.type
     my.navigateTo({
-      url: '/pages/catalog/catalog?classId=' + currId,
+      url: '/pages/catalog/catalog?classId=' + currId + "&" + "type=" + type,
       success: (res) => {
-        console.info(res)
+        console.log(res)
+      }
+    });
+  },
+  _getNotice() {
+    my.redirectTo({
+      url: '../notice/notice',
+      success: (res) => {
+        console.log("success")
       }
     });
   }

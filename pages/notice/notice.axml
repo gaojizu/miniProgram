@@ -1,0 +1,10 @@
+<view>
+  <am-notice marqueeProps="{{marqueeProps}}" 
+  enableMarquee="{{true}}" show="{{closeShow}}" 
+  type="{{noticeType}}" mode="{{noticeMode}}" 
+  action="{{actionText}}" onClick="actionClick" 
+  actionLeft="{{actionLeftText}}">
+  满分 100 分，合格 60 分。考试时间 150 分钟满分 100 分
+  </am-notice>
+  <am-card  title="考试题型" subTitle="一、单项选择题 30 道，每道 1 分，共 30 分。 二、多项选择题 5 道，每道 2 分，共 10 分。 三、简答题 5 道，每道 5 分，共 25 分。 四、论述题 2 道，每道 10 分，共 20 分。 五、材料题 1 道，每道 15 分，共 15 分。">⏰</am-card>
+</view>

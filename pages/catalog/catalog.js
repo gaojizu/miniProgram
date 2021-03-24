@@ -1,11 +1,13 @@
 Page({
   data: {
-    currId: 0
+    currId: 0,
+    currType:'',
+    catLogLists: [],
   },
   onLoad(query) {
-    console.info(query)
     this.setData({
-      currId : query.classId
+      currId: query.classId,
+      currType:query.type
     })
     this._getcataLog()
   },
@@ -15,18 +17,29 @@ Page({
       method: 'POST',
       timeout: 0,
       params: {
-        classId: this.currId
+        classId: this.data.currId
       },
       dataType: 'json',
       success: (result) => {
-        console.info(result)
+        this.setData({
+          catLogLists: result.data.catlogs
+        })
       },
       fail: (error) => {
-        console.info(error)
+        console.log(error)
       },
       complete: (com) => {
-        console.info(com)
+        console.log(com)
       }
     })
+  },
+  _toStudy(event) {
+    let catlogId = event.target.dataset.info.id
+    my.navigateTo({
+      url: '../details/details?id='+ catlogId + "&" + "type=" + this.data.currType,
+      success: (res) => {
+        console.log("success")
+      }
+    });
   }
 })
