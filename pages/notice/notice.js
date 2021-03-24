@@ -53,6 +53,10 @@ Page({
       noticeContent: e.detail.value,
     });
   },
+  /**
+   * 
+   * @param {*} e 
+   */
   typeChange(e) {
     this.setData({
       noticeType: e.detail.value,
