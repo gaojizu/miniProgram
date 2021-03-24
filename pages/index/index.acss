@@ -1,7 +1,7 @@
 page{
   background-color:#3e90f7;
-  display: flex;
-  flex-direction: column;
+  display: flex;  
+  flex-direction: column;    
   align-content: center;
   align-items: center;
 }

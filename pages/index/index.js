@@ -15,7 +15,8 @@ Page({
     });
   },
   /**
-   * @function 获取到用户基本信息
+   * @function 获取到用户基本信息 
+   * @param
    */
   _getUserinfos() {
     let _this = this
